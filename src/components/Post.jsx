@@ -38,6 +38,7 @@ export function Post({ author, publishedAt, content }) {
 
   function deleteComment(commentToDelete) {
     const commentsWithoutDeletedOne = comments.filter((comment) => {
+      console.log(comment);
       return comment !== commentToDelete;
     });
 
